@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block headercontent %}
+<title>Formulář</title>
+<style>
+	.btn {
+		margin-top: 5px;
+	}
+
+	.my-1 {
+		margin:8px 0;
+	}
+</style>
+{% endblock %}
+
+
+{% block pagecontent %}
+<h1 class="m-heading">Registrační formulář</h1>
+<form action="#">
+    <div><label for="krestni">Křestní Jméno</label></div>
+    <div><input type="text" name="krestni" id="krestni" placeholder="Vaše Křestní Jméno"></div>
+    <br>
+    <div><label for="prijmeni">Příjmení</label></div>
+    <div><input type="text" name="prijmeni" id="prijmeni" placeholder="Vaše Příjmení"></div>
+    <br>
+
+    <div class="my-1">
+        <label for="muz">Muž</label>
+        <input type="radio" name="pohlavi" id="muz">
+        <label for="muz">Žena</label>
+        <input type="radio" name="pohlavi" id="zena">
+        <label for="muz">Ostatní</label>
+        <input type="radio" name="pohlavi" id="ostatni">
+    </div>
+    <H3>Jak se chcete sejít?</H3>
+    <label for="internet">Přes internet</label>
+    <input type="checkbox" name="internet" id="internet">
+    <br>
+    <label for="osobne">Osobně</label>
+    <input type="checkbox" name="osobne" id="osobne">
+    <br>
+    <br>
+    <label for="situace">S čím chcete pomoct?</label>
+    <br>
+    <textarea name="situace" name="textarea" rows="10" cols="50"></textarea>
+    <br>
+    <label for="url">Kontakt na vás</label>
+    <br>
+    <input type="text" id="Kontakt" name="Kontakt" placeholder="E-mail nebo Tel. číslo">
+    <div class="btn"><input type="submit" value="Odeslat"></div>
+</form>
+{% endblock %}
