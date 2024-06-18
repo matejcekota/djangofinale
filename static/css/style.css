@@ -227,3 +227,10 @@
   #guys img {
       border-radius: 50%;
   }
+
+  .btn1 {
+    display: inline-block;
+    color: white;
+    margin-left: 46.3rem;
+    text-align: center;
+  }
